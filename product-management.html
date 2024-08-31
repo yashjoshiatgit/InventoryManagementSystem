@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System - Product Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header Section -->
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="product-management.html">Product Management</a></li>
+      <li><a href="category-management.html">Category Management</a></li>
+      <li><a href="reports.html">Reports</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Main Content Section -->
+<main>
+  <!-- Product Management Section -->
+  <section id="product-management">
+    <h1>Product Management</h1>
+    <form id="product-form">
+      <label for="product-name">Product Name:</label>
+      <input type="text" id="product-name" name="product-name" required>
+
+      <label for="product-category">Category:</label>
+      <select id="product-category" name="product-category">
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="groceries">Groceries</option>
+      </select>
+
+      <label for="product-price">Price:</label>
+      <input type="number" id="product-price" name="product-price" required>
+
+      <label for="product-stock">Stock Level:</label>
+      <input type="number" id="product-stock" name="product-stock" required>
+
+      <button type="submit">Add Product</button>
+    </form>
+
+    <table id="product-table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Stock Level</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- Product rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+  <p>&copy; 2024 Inventory Management System</p>
+</footer>
+</body>
+</html>
